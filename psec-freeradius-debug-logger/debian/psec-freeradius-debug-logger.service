@@ -1,0 +1,10 @@
+[Unit]
+Description=PSec FreeRADIUS debug logger
+After=freeradius.service
+WorkingDirectory=/var/log/freeradius
+
+[Service]
+ExecStart=/usr/bin/socat GOPEN:/var/log/freeradius/debug.log,ignoreeof EXEC:/usr/bin/systemd-cat\ -t\ freeradius\ -p\ debug
+
+[Install]
+WantedBy=multi-user.target

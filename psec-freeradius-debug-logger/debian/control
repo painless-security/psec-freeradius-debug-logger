@@ -1,0 +1,15 @@
+Source: psec-freeradius-debug-logger
+Section: proprietary/net
+Priority: standard
+Maintainer: Painless Security <build@painless-security.com>
+Build-Depends: debhelper (>= 9), dh-systemd
+Standards-Version: 3.9.6
+
+
+Package: psec-freeradius-debug-logger
+Architecture: all
+Depends: ${misc:Depends}, socat
+Description: An adapter to log FreeRADIUS debug output to systemd
+ This service will take all of the text logged to
+ /var/log/freeradius/debug.log and stream it to the systemd journal
+ under the service name 'freeradius' and the priority 'debug'.

@@ -1,0 +1,11 @@
+psec-freeradius-debug-logger (1.0~2) unstable; urgency=low
+
+  * Update systemd file.
+
+ -- Painless Security <build@painless-security.com>  Tue, 28 Jun 2016 14:47:57 -0400
+
+psec-freeradius-debug-logger (1.0~1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Painless Security <build@painless-security.com>  Tue, 28 Jun 2016 14:47:57 -0400
